@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+requires-python = ">=3.13"
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "gaia_multiagent"
+version = "0.0.1"
+
+dependencies = ["smolagents[telemetry]",
+                "google-genai",
+                "wikipedia-api",
+                "langchain-huggingface",
+                "langchain-community",
+                "faiss-cpu",
+                "wikipedia",
+                "openpyxl",
+                "yt-dlp",
+                "ffmpeg",
+                "playwright",
+                "markdownify",
+                "pytubefix",
+                "duckduckgo-search",
+                "wikipedia"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gaia_multiagent"]
